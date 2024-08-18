@@ -52,7 +52,7 @@ export default function App() {
 
   const isVisibleBtnLoadMore = totalPages > page && images.length > 0;
 
-  const openModal = (thisImage): void => {
+  const openModal = (thisImage: React.SetStateAction<UnsplashImage | null>): void => {
     setIsOpenModal(true);
     setCurrentImage(thisImage);
   };

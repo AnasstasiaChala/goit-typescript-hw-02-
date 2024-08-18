@@ -25,3 +25,4 @@ export interface ImageModalProps {
   onRequestClose: () => void;
   preventScroll: boolean;
 }
+
