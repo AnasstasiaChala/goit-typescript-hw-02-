@@ -1,13 +1,11 @@
 import React from 'react';
-import { InfinitySpin } from 'react-loader-spinner';
+import { TailSpin } from 'react-loader-spinner';
+
 
 export default function Loader() {
   return (
-    <InfinitySpin
-      visible={true}
-      width="200"
-      color="#0000ff"
-      ariaLabel="infinity-spin-loading"
-    />
+    <div>
+      <TailSpin height="80" width="80" color="blue" ariaLabel="loading" />
+    </div>
   );
 }
